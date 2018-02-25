@@ -1,0 +1,25 @@
+#+TITLE: Emacs e Org-mode:
+
+
+
+
+* Uma breve introdução
+
+
+
+
+
+
+                                       João Pedro de Amorim Paula
+                                       jpedrodeamorim@gmail.com
+
+
+
+
+
+
+* O que é Emacs?
+
+* Por que usá-lo?
+
+** Porque sim
