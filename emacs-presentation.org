@@ -1,0 +1,181 @@
+#+TITLE: Emacs e Org-mode
+
+
+
+
+* Uma breve introdução
+
+
+
+
+
+
+                                       João Pedro de Amorim Paula
+                                       jpedrodeamorim@gmail.com
+
+
+
+* O que esperar desse mini-curso/palestra?
+  - Você não conhece Emacs?
+
+          Então vou tentar impressioná-lo.
+
+  - Você conhece o Emacs e quer começar a usá-lo?
+
+          Vou tentar lhe ajudar a começar.
+
+  - Você já usa Emacs?
+
+          Espero que alguma dica possa ajudá-lo.
+  [[./real_programmers.png]]
+* O que é Emacs?
+
+  - Um editor de texto.
+
+  - Uma família de editores de texto.
+
+          GNU Emacs, XEmacs, Remacs...
+          Vamos nos ater ao GNU Emacs, o "Emacs" mais usado.
+
+  - Um interpretador de Emacs Lisp.
+  #+BEGIN_QUOTE
+          /Em seu núcleo (GNU Emacs) é um interpretador de Emacs Lisp, um dialeto
+          da linguagem de programação Lisp, com extensões para suportar edição/
+          /de texto./
+  #+END_QUOTE
+  - Um dos dois editores "que prestam"
+
+          Emacs vs Vi(m)
+* Por que Emacs?
+
+  + Um bom *editor* de texto.
+
+          Muitos editores de texto e IDE's implementam muitas funcionalidades
+          mas se esquecem do principal.
+
+  + Tudo é possível.
+
+          Cliente de IRC, cliente de email, shell, reprodutor de música,
+          navegador de arquivos, controle de versão, compilação, depuração...
+
+  + Suporte para arquitetura cliente-servidor.
+  #+BEGIN_SRC sh
+          time emacsclient -c
+          emacsclient -c  0.00s user 0.00s system 0% cpu 5.026 total
+  #+END_SRC
+  - O Emacs é moderno.
+
+          Apesar de ter sido feito em 1972, ele se mantém um editor moderno.
+* Extensível...
+
+  .^adjetivo
+  "/Que se consegue estender; extensivo./"
+
+
+
+  Um bom editor deveria se moldar à sua vontade,
+  e não o contrário.
+
+  Como seu núcleo é um interpretador de elisp,
+  você tem a natureza dinâmica da linguagem à seu
+  favor.
+
+  Se você quer funcioanlidades que você não
+  encontrou no Emacs nem em algum pacote,
+  adicione você mesmo...
+* Alguns pacotes interessantes
+
+  - Helm
+
+          Fuzzy-finding em tudo!
+
+  - Evil!
+
+          Um "emulador" de Vim (você não precisa escolher entre um e outro.
+
+  - Projectile
+
+          Project Interaction Library for Emacs.
+
+  - Yasnippets
+  - Ehsell
+
+          Um shell escrito em Emacs Lisp.
+
+  - Magit
+
+          Uma interface mais interativa para Git.
+* Magit demo
+
+[[~/Downloads/status-solarized-dark.png]]
+* Org-mode
+
+  - Marcação
+
+
+
+  - Listas
+
+    1. Listas ordenadas
+
+    2. Listas alfanuméricas
+
+* Org-mode
+
+  - Links
+
+
+    [[~/Downloads/phbAr.png]]
+
+  - Tabelas
+
+
+  - Exportar para outros tipos de arquivos
+
+#+OPTIONS:
+
+* Org-mode
+
+  - Código
+
+    #+BEGIN_SRC python
+print("ops")
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
+    #+END_SRC
+
+    #+BEGIN_SRC sh
+ls -l ~ | grep Downloads
+    #+END_SRC
+
+* Org-mode
+
+  - LaTeX
+
+    Podemos inserir códigos de LaTeX:
+
+    \begin{align*}
+    3 * 2 + 1 &= 6 + 1 \\
+              &= 7
+    \end{align*}
+
+    $$ e^{\pi i} = -1 $$
+
+  - Programação "alfabetizada"
+
+* Acho que é isto
+
+
+
+
+
+
+
+
+                                                                *Dúvidas?*
