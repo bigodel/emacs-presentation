@@ -1,3 +1,6 @@
+;;; demo-it ----- This package is used to make presentations on Emacs.
+;;; Commentary: This first line `(require 'demo-it)' is necessary so that Emacs knows we'll need to use this package.
+
 (require 'demo-it)
 
 (defun my-demo/eshell-start (dir name height)
